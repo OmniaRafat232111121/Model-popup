@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&display=swap');
+:root {
+    --white: #fff;
+    --black: #1c2b2d;
+    --blue: #005490;
+    --color-primary: #9d0191;
+    --color-sec: #db6400;
+    --color-grey: #eee;
+    --color-dark-grey: #222831;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .3s ease-out;
+   
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+    overflow-x: hidden;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 17, 159);
+    height: 100vh;
+}
+
+header{
+    position:fixed;
+    z-index:1000;
+    top:0;
+    left:0;
+    right:0;
+    box-shadow: black;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:40px 30px;
+    text-decoration: none;
+   
+}
+.header .logo{
+    font-size: 2.5rem;
+    color:#fff;
+    font-weight: bolder;
+
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--light-color);
+    margin-left: 2rem;
+}
+.header .navbar a:hover{
+    color:pink
+};
+#menu-btn{
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding:1rem 1.3rem;
+    border-radius: .5rem;
+    color: var(--main-color);
+    background: var(--bg);
+    display: none;
+}
+#menu-btn:hover{
+    color: #fff;
+    background: var(--main-color);
+}
+
+
+/* UTILITY */
+.p-small {
+    padding-bottom: 5px;
+}
+.p-medium {
+    padding-bottom: 10px;
+}
+.p-y {
+    padding: 10px 0;
+}
+.m-y {
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.pink {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 3rem;
+}
+
+.pink h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.pink h1 span {
+    font-weight: 700;
+}
+
+.pink p {
+    font-size: 1.4rem;
+}
+
+section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+form {
+    padding-bottom: 1rem;
+}
+
+form input,
+form button {
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: .8rem;
+    font-size: 1.2rem;
+    font-family: inherit;
+    
+}
+form input {
+    width: 30rem;
+    padding: .8rem;
+    margin-right: 3px;
+    border-bottom: 3px solid var(--color-primary);
+}
+
+form button {
+    background-color:transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+form button:hover {
+    background-color: rgba(83, 81, 81, 0.5);
+    color:#fff;
+}
+
+footer p {
+    font-size: 1.4rem;
+    color: #fff;
+    padding-top: 10rem;
+}
+
+footer a {
+    color: rgba(240, 154, 221, 0.5);
+    text-decoration: none;
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(240, 154, 221, 0.5);
+  }
+  
+  .modal-content  {
+  
+    margin: 15% auto;
+    padding: 20px;
+ 
+    border: 1px solid #777;
+    border-radius: 3px;
+    width: 30rem;
+    position: relative;
+    text-align: center;
+  
+  }
+ 
+  .close {
+      position: absolute;
+      top: 10px;
+      right: 1rem;
+      color: white;
+      font-size: 2rem;
+      
+  }
+  
+
+  .progress {
+      
+      width: 100%;
+      height: 4px;
+          background-color: #fff;
+  }
+
+  .progress::-webkit-progress-value {
+    background-color: #fff;
+    transition: width 1s ease;
+}
